@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+    stages {
+        stage('BranchName') {
+            steps {
+                script {
+                    def branchName = env.BRANCH_NAME
+                    echo "The current branch being built is: ${branchName}"
+
+                    if (branchName == 'main' || branchName == 'dev') {
+                        echo 'This is a main branch.'
+                    } else 
+                        echo "This is a dev branch  )."
+                    }
+                }
+            }
+        }
+    }
+}
