@@ -6,10 +6,10 @@ pipeline {
                 script {
                     def branchName = env.BRANCH_NAME
         
-                    if (branchName == 'main') {
-                        echo 'This is a main branch.'
+                    if (branchName == 'dev') {
+                        echo 'This is a dev branch.'
                     } else {
-                        echo "This is a dev branch ."
+                        echo "This is a main branch ."
                     }
                 }
             }
