@@ -10,7 +10,7 @@ pipeline {
                     if (branchName == 'main' || branchName == 'dev') {
                         echo 'This is a main branch.'
                     } else {
-                        echo "This is a dev branch  )."
+                        echo "This is a dev branch ."
                     }
                 }
             }
